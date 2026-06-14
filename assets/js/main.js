@@ -53,3 +53,25 @@
     }
   }
 })();
+
+/* Privacy notice — this site uses no tracking cookies; remembers dismissal only */
+(function () {
+  "use strict";
+  try { if (localStorage.getItem("kn-notice") === "ok") return; } catch (e) {}
+  function mount() {
+    var bar = document.createElement("div");
+    bar.className = "cookie-notice";
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "Privacy notice");
+    bar.innerHTML =
+      '<p>This site uses <strong>no tracking or advertising cookies</strong>. We only store, in your browser, the fact that you have seen this notice. <a href="cookies.html">Cookie&nbsp;Policy</a></p>' +
+      '<button class="btn btn-light" type="button">Got it</button>';
+    document.body.appendChild(bar);
+    bar.querySelector("button").addEventListener("click", function () {
+      try { localStorage.setItem("kn-notice", "ok"); } catch (e) {}
+      bar.remove();
+    });
+  }
+  if (document.body) mount();
+  else document.addEventListener("DOMContentLoaded", mount);
+})();
