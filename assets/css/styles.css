@@ -406,3 +406,6 @@ p { margin: 0 0 1em; }
   border-radius: 8px; padding: 16px 18px; font-size: 13.5px; color: var(--slate); margin-top: 32px;
 }
 .back-link { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-dk); display: inline-block; margin-bottom: 18px; }
+
+/* news covers: full-bleed 16:9 images */
+.post .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
