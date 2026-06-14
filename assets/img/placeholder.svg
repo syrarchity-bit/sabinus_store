@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Product photo placeholder">
+  <rect width="480" height="320" fill="#F3F5F2"/>
+  <g fill="none" stroke="#c7d0c9" stroke-width="1.5" stroke-dasharray="6 6">
+    <rect x="0.75" y="0.75" width="478.5" height="318.5"/>
+  </g>
+  <g transform="translate(240 130)">
+    <circle r="34" fill="#e3e8e4"/>
+    <path d="M-16 8 l11 -14 8 9 6 -7 9 12 z" fill="#aab4ac"/>
+    <circle cx="10" cy="-9" r="5" fill="#aab4ac"/>
+  </g>
+  <text x="240" y="206" text-anchor="middle" font-family="monospace" font-size="13" fill="#8a978f" letter-spacing="2">ADD OFFICIAL PRODUCT PHOTO</text>
+  <text x="240" y="228" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#9aa49c">replace /assets/img with licensed imagery</text>
+</svg>

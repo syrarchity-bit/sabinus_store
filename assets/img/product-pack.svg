@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" role="img" aria-label="Kaiser Natron pure sodium bicarbonate — illustrative pack">
+  <defs>
+    <linearGradient id="pack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef1ee"/>
+    </linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C8C9C"/>
+      <stop offset="1" stop-color="#1F6A78"/>
+    </linearGradient>
+  </defs>
+
+  <!-- powder mound -->
+  <ellipse cx="180" cy="406" rx="150" ry="26" fill="#ffffff" opacity=".18"/>
+
+  <!-- carton body -->
+  <rect x="96" y="92" width="168" height="288" rx="10" fill="url(#pack)" stroke="#d9ddda" stroke-width="1.5"/>
+  <!-- lid band -->
+  <rect x="96" y="92" width="168" height="54" rx="10" fill="url(#lid)"/>
+  <rect x="96" y="132" width="168" height="14" fill="#0F2C4D" opacity=".08"/>
+
+  <!-- label block -->
+  <text x="180" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-style="italic">Kaiser Natron</text>
+  <text x="180" y="206" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#0F2C4D" font-weight="600">PURE</text>
+  <text x="180" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#0F2C4D">Sodium Bicarbonate</text>
+  <line x1="132" y1="262" x2="228" y2="262" stroke="#2C8C9C" stroke-width="2"/>
+  <text x="180" y="292" text-anchor="middle" font-family="monospace" font-size="13" fill="#5C6B79" letter-spacing="2">NaHCO&#8323; · 100%</text>
+  <text x="180" y="338" text-anchor="middle" font-family="monospace" font-size="11" fill="#8a978f" letter-spacing="3">MADE IN GERMANY</text>
+
+  <!-- brass heritage dot -->
+  <circle cx="180" cy="362" r="9" fill="#B0863C" opacity=".9"/>
+  <text x="180" y="366" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#fff">100</text>
+
+  <!-- scoop with powder -->
+  <g transform="translate(232 318) rotate(18)">
+    <path d="M0 0 q34 -6 60 6 q6 14 -8 22 q-30 8 -52 -4 z" fill="#dfe4e0" stroke="#c7ccc8"/>
+    <ellipse cx="30" cy="6" rx="30" ry="9" fill="#ffffff"/>
+    <rect x="-30" y="-4" width="34" height="9" rx="4" fill="#aeb6b0"/>
+  </g>
+</svg>
