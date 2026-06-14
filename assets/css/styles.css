@@ -17,6 +17,7 @@
   --line:     #E1E5E2;   /* hairlines */
   --line-ink: rgba(15,44,77,.12);
   --white:    #ffffff;
+  --bg:       #F5F3EE;   /* page canvas — soft off-white, easier on the eyes */
 
   /* Type */
   --display: "Fraunces", Georgia, "Times New Roman", serif;
@@ -41,7 +42,7 @@ html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: var(--body);
-  background: var(--powder);
+  background: var(--bg);
   color: var(--ink);
   line-height: 1.62;
   font-size: 17px;
@@ -94,7 +95,7 @@ p { margin: 0 0 1em; }
    ===================================================================== */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(251,251,249,.82);
+  background: rgba(245,243,238,.82);
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--line);
 }
