@@ -472,3 +472,7 @@ p { margin: 0 0 1em; }
   .post.feat .body { justify-content: center; }
   .post.feat h3 { font-size: clamp(22px, 2.4vw, 28px); }
 }
+
+/* Show logo-panel covers (e.g. Lativus) fully, never cropped */
+.post .cover.logo-panel { background: #fff; }
+.post .cover.logo-panel img { object-fit: contain; padding: 22px; width: 100%; height: 100%; }
