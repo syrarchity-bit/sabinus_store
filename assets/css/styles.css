@@ -34,7 +34,7 @@
 
 /* ----- reset ----- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 124px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
@@ -99,7 +99,7 @@ p { margin: 0 0 1em; }
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--line);
 }
-.nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.nav { display: flex; align-items: center; justify-content: space-between; height: 112px; gap: 18px; }
 .brand { display: flex; align-items: center; gap: 11px; font-family: var(--display); font-weight: 600; font-size: 21px; color: var(--ink); letter-spacing: .02em; }
 .brand:hover { text-decoration: none; }
 .brand .mark { width: 30px; height: 30px; flex: none; }
@@ -458,7 +458,17 @@ p { margin: 0 0 1em; }
 .site-footer .brand small::before, .site-footer .brand small::after { background: #6d8197; opacity: .7; }
 
 /* ===== Uploaded SABINUS logo (image lockup) ===== */
-.brand-logo { height: 42px; width: auto; display: block; }
-.site-header .brand-logo { height: 40px; }
-.site-footer .brand-logo { height: 40px; }
-@media (max-width: 600px){ .brand-logo { height: 34px; } }
+.brand-logo { height: 96px; width: auto; display: block; }
+.site-header .brand-logo { height: 96px; }
+.site-footer .brand-logo { height: 92px; }
+@media (max-width: 880px){ .site-header .brand-logo { height: 60px; } .nav { height: 82px; } }
+@media (max-width: 600px){ .site-header .brand-logo { height: 46px; } .nav { height: 64px; } .site-footer .brand-logo { height: 60px; } }
+
+/* Featured news card spans full width as a hero (logo announcement) */
+.news-grid > .post.feat { grid-column: 1 / -1; }
+@media (min-width: 721px){
+  .post.feat { display: grid; grid-template-columns: 1.15fr 1fr; }
+  .post.feat .cover.logo-panel { aspect-ratio: auto; height: 100%; min-height: 250px; border-bottom: none; border-right: 1px solid var(--line); }
+  .post.feat .body { justify-content: center; }
+  .post.feat h3 { font-size: clamp(22px, 2.4vw, 28px); }
+}
