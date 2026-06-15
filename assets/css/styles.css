@@ -205,6 +205,7 @@ p { margin: 0 0 1em; }
 
 /* region map */
 .region { margin-top: 30px; }
+.region img { border-radius: 14px; }
 .region figcaption { font-family: var(--mono); font-size: 12px; color: var(--slate); margin-top: 10px; letter-spacing: .04em; }
 
 /* =====================================================================
