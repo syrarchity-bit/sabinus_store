@@ -130,6 +130,8 @@ p { margin: 0 0 1em; }
   .nav-links a { display: block; padding: 13px 0; width: 100%; border-bottom: 1px solid var(--line); }
   .nav-links a::after { display: none; }
   .nav-cta { margin: 14px 0 0; }
+  /* a Contact gomb maradjon GOMB a mobil menüben is — ne vegye fel a sima link-stílust */
+  .nav-links .nav-cta .btn { display: flex; justify-content: center; width: 100%; padding: 14px 22px; border-bottom: none; }
 }
 
 /* =====================================================================
